@@ -1,0 +1,46 @@
+#main{
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+  top:0px;
+  left:0px;
+}
+
+#main h1{
+  text-align: left;
+  color: #E3E3E3;
+  font-size: 4rem;
+  margin-bottom: 3px;
+}
+
+#main h2{
+  text-align: right;
+  color: #37a250;
+  font-size: 25px;
+}
+
+#main-page-img-back-block {
+  position: absolute;
+  opacity: 1;
+  background: #171717;
+  height: 410px;
+  width: 100%;
+  bottom:0px;
+  left:0px;
+}
+
+#main-title-block {
+  margin: 15px;
+  position: absolute;
+  right: 0%;
+  min-width: 200px;
+  z-index:1;
+}
+
+.main-block-button {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translate(-50%,0px);
+  z-index:2;
+}

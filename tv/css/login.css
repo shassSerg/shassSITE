@@ -1,0 +1,246 @@
+.main-upper-block{
+  position: fixed;
+  opacity: 0.88;
+  background: #DBDBDB;
+  border-bottom: 10px solid green;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  height: 80px;
+  width: 100%;
+  top:0px;
+  left:0px;
+  z-index:5;
+  transition: opacity 0.1s linear 0s, height 0.3s linear 0s;
+}
+
+.main-upper-block-after{
+  opacity: 1;
+  height: 70px;
+}
+
+.main-upper-block-logo{
+  position: absolute;
+  background-image: url(/images/title.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 70px;
+  width: 70px;
+  top:50%;
+  transform: translate(-50%,-50%);
+  left:50%;
+  margin: 0px;
+  transition: width 0.3s linear 0s, height 0.3s linear 0s;
+}
+
+.main-upper-block-logo-after{
+  height: 50px;
+  width: 50px;
+}
+
+.main-upper-block-logo-behind{
+  position: absolute;
+  background: none;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  top:50%;
+  transform: translate(0px,-50%);
+  left:20px;
+  margin: 0px;
+  transition: width 0.3s linear 0s, height 0.3s linear 0s;
+}
+
+.main-upper-block-logo-behind-after{
+  height: 50px;
+  width: 50px;
+}
+.title-block-login{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.main-block-nav{
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-block-local{
+  color: green;
+}
+.main-block-local:hover{
+  color: #171717;
+}
+.main-block-login-ava{
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  outline: none;
+  border: none;
+  cursor:pointer;
+}
+
+.title-block-login-info-closed{
+  outline: 0 !important;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  position: absolute;
+  border-bottom-left-radius: 3px;
+  right: 0;
+  background: #dbdbdb;
+  width: 170px;
+  height: 100px;
+  top: 70px;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.15s linear 0s;
+  overflow: hidden;
+  display: none;
+  margin-right: -10px;
+}
+.title-block-login-info-open{
+    display: block;
+    opacity: 1;
+  /*height: 100px;*/
+}
+
+.title-block-login-info{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.logo-box-upper-block-right{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  width: 80px;
+
+}.title-block-login-logout{
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+
+
+.login-yandex-logo{
+  background: url(/images/yandex-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 0;
+  min-width: 100px;
+  min-height: 55px;
+  border: none;
+  transition: transform 0.2s linear 0s;
+}
+.login-yandex-logo:hover{
+  transform: scale(1.1);
+}
+.login-vk-logo{
+  background: url(/images/vk-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 0;
+  min-width: 70px;
+  min-height: 70px;
+  border: none;
+  transition: transform 0.2s linear 0s;
+}
+.login-vk-logo:hover{
+  transform: scale(1.1);
+}
+.login-twitch-logo{
+  background: url(/images/twitch-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 0;
+  min-width: 100px;
+  min-height: 45px;
+  border: none;
+  transition: transform 0.2s linear 0s;
+}
+.login-twitch-logo:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+.login-alerts-class-contacts{
+  opacity: 1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /*height: 70px;*/
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.4s linear 0s;
+  overflow: hidden;
+}
+.login-alerts-class-contacts-closed{
+  opacity: 0;
+    transition: opacity 0.4s linear 0s;
+    overflow: hidden;
+}
+.login-alerts-class-contacts-open{
+opacity: 1;
+animation: alert  7s infinite ease-in-out;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+.loader-submit{
+  display: inline-block;
+      position: relative;
+      border: 3px solid #ffffff;
+      border-top: 3px solid #9a9a9a;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      left: 50%;
+      top: 12px;
+      margin-top: 0;
+      transform-origin: center;
+      animation: spin 2s linear infinite;
+      z-index: 3;
+}
+@keyframes alert {
+from {opacity:  1;padding: .75rem 1.25rem;height: auto; padding-right: 4rem;margin-bottom:1rem;
+    }
+92% {opacity:  1;padding: .75rem 1.25rem;height: auto; padding-right: 4rem;margin-bottom:1rem;}
+to {padding: 0;margin: 0;height: 0;
+visibility: hidden;}
+}

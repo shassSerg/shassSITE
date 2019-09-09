@@ -1,0 +1,93 @@
+#download{
+  /*background: #f2f2f2;*/
+  background: aliceblue;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  left:0px;
+  z-index:3;
+  overflow: hidden;
+}
+#download h1{
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 0;
+  transform: translate(-50%,0);
+  color: #565656;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+}
+#download h2{
+  position: relative;
+  font-size: 21px;
+  color: #565656;
+  text-align: center;
+
+
+  /*font-family: 'Roboto Slab', serif;
+  font-weight: normal;*/
+}
+#download button{
+position: relative;
+left: 50%;
+transform: translate(-50%,0);
+width: 200px;
+border-radius: 20px;
+background: linear-gradient(45deg, #bb5b17, #edf126);
+border: none;
+}
+.smartphone-download{
+  width: 400px;
+  bottom: 0;
+  position: absolute;
+left:50%;
+transform: translateX(-390px);
+transition: transform 1s ease 0s;
+}
+.smartphone-download-after{
+  transform: translateX(-360px);
+}
+.qr-download{
+  margin: 0;
+  position: relative;
+border-radius: 25px;
+  width: 210px;
+  height: 210px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 10px;
+}
+.container-for-download{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 600px;
+  width: 700px;
+  z-index: 10;
+}
+.download-block-title{
+  position: absolute;
+      width: 350px;
+      height: auto;
+      right: 0;
+      top: 100px;
+      z-index: 10;
+}
+@media screen and (max-width: 800px) {
+.smartphone-download{
+    display: none;
+  }
+  .download-block-title{
+    top: 150px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .container-for-download{
+    width: 100%;
+    padding: 5px;
+  }
+}

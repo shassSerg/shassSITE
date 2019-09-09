@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/docs/css/drone/ihelp.css">
+
+<section id="i_help">
+<div class="message-block message-block-dark message-block-recomend">
+<h4>Пояснение</h4>
+<p>Для устранения проблемы следуйте инструкциям ниже, просто выбирая необходимые варианты ответов.</p>
+
+  <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+</div>
+
+<div id="i_hel_main">
+<p class="main-drone-faq class-title-ihelp" id="message_ihelp"><strong>Что у вас случилось?</strong></p>
+<div id="buttons_ihelp" class="class-list-ihelp list-group">
+    <button type="button" id="list-enable-list" class="ihelp-class-item list-group-item list-group-item-action" onclick="cur_type=0;cur_index=0;changeQuestion(null);">Дрон не включается</button>
+    <button type="button" id="list-connect-list" class="ihelp-class-item list-group-item list-group-item-action" onclick="cur_type=1;cur_index=0;changeQuestion(null);";>Не удается подключиться к дрону или его не видно как bluetooth-устройство</button>
+    <button type="button" id="list-answer-list" class="ihelp-class-item list-group-item list-group-item-action" onclick="cur_type=2;cur_index=0;changeQuestion(null);">Дрон не отвечает на запросы ( получение значений/установка значений)</button>
+    <button type="button" id="list-command-list" class="ihelp-class-item list-group-item list-group-item-action"  onclick="cur_type=3;cur_index=0;changeQuestion(null)";>Дрон включается и соединяется с устройством посредством протокола взаимодействия, но не выполняет команды ( например, не взлетает)</button>
+    <button type="button" id="list-wrong-list" class="ihelp-class-item list-group-item list-group-item-action" onclick="cur_type=4;cur_index=0;changeQuestion(null);">Дрон отправляет некорректные данные</button>
+</div>
+</div>
+</section>
+
+
+<script src="/docs/js/drone/ihelp.js"></script>

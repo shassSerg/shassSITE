@@ -1,0 +1,89 @@
+.main-drone-faq{
+  font-size: 1.5rem;
+  font-weight: 300;
+      margin-bottom: 2.3rem;
+}
+.message-block-faq {
+  width: 100%;
+  display: inline-flex;
+    padding-left: 1.1rem;
+    margin-top: 0.25rem;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    background-color: #e9ecef;
+    border: 1px solid #c7c7c7;
+    border-left: 5px solid #85b2e0;
+    height: auto;
+    cursor: pointer;
+          z-index: 10;
+}
+.message-block-faq p{
+  margin: 0;
+  padding: 0.6rem;
+  padding-left: 0;
+
+}
+
+.block-arrow-faq{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+      transform: rotate(0deg);
+      margin-right: 10px;
+      transition: transform 0.3s ease 0s;
+}
+.block-arrow-faq-first{
+  background: #649cce;
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  border-radius: 3px;
+  top: 0%;
+  transform-origin: center;
+  transform: translate(-50%,140%) rotate(45deg);
+  margin: auto;
+  left: 50%;
+}
+.block-arrow-faq-second{
+  background: #649cce;
+      width: 20px;
+      height: 5px;
+      position: absolute;
+      border-radius: 3px;
+      bottom: 0%;
+      transform: translate(-50%,-140%) rotate(-45deg);
+      transform-origin: center;
+      margin: auto;
+      left: 50%;
+}
+.block-faq{
+  margin-bottom: 2.3rem;
+}
+.message-block-faq-info{
+  position: relative;
+      width: 100%;
+      padding-left: 1.1rem;
+      margin-bottom: 0.25rem;
+      border-left-width: .25rem;
+      background-color: #e9ecef;
+      border-bottom-left-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+      height: 0;
+      overflow: hidden;
+      margin-top: -3px;
+      z-index: 1;
+      padding: 0px;
+
+    border: 0px solid #c7c7c7;
+    border-top: 0px solid #eee;
+}
+.message-block-faq-info-open{
+  border: 1px solid #c7c7c7;
+  border-top: 0px solid #eee;
+      height: auto;
+}
+.message-block-faq-info-block{
+      margin: 10px;
+}

@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="/docs/css/drone/control.css">
+<section id="protocol">
+<h4>1. Протокол взаимодействия</h4>
+<p class="main-drone-faq">Является собственной технологий взаимодействия. Дрон считывает каждый новый пришедший байт и записывает его в буффер, размер которого равен размеру пакета - 7 байтам, до того момента пока пакет не будет распознан. Каждый пакет имеет строгую структуру, как пакет установки значений, так и пакет получения значений. Первый байт пакета отвечает за тип сообщения - установка (1) или получение (0) значения.</p>
+<p class="main-drone-faq">Второй байт пакета отвечает за номер параметра, который требуется получить или установить. Следующие 4 байта отводятся для хранения значения для установки ( в случае получения значений эти 4 байта используюся только для вычисления корректности пакета, о чем будет рассказано ниже). </p>
+<p class="main-drone-faq">Последний завершающий байт используется для подтверждения корректности пакета ( проверяет был ли пакет поврежден при отправке или является ли это пакетом, а не шумами при передаче информации) и является сложением по модулю два всех предыдущих байтов.</p>
+<div class="message-block message-block-dark message-block-recomend">
+<h4>Рекомендация</h4>
+<p class="main-drone-faq">При отправке пакета с получения ифнормации, желательно заполнять 4 байта значений рандомными байтами для обеспечения откаустойчивости передачи данных.</p>
+</div>
+</section>
+<section id="connect">
+<h4>2. Подключение к дрону</h4>
+<p class="main-drone-faq">Как управление, так и подключение к дрону осуществляется с помощью специльного <a href="https://shass.ru/#download">программного обеспечения</a>. Следуйте указаниям и интуитивно понятному интерфейсу программы. Скриншоты программы:</p>
+
+<div class="slider-images ">
+<div class="slider-images-slide "  style="background-image: url('/docs/images/drone/control1.png')"></div>
+<div class="slider-images-slide "  style="background-image: url('/docs/images/drone/control2.png')"></div>
+<div class="slider-images-slide "  style="background-image: url('/docs/images/drone/control3.png')"></div>
+<div class="slider-images-slide "  style="background-image: url('/docs/images/drone/control4.png')"></div>
+<div class="slider-images-slide "  style="background-image: url('/docs/images/drone/control5.png')"></div>
+<div class="slider-images-slide "  style="background-image: url('/docs/images/drone/control6.png')"></div>
+</div>
+
+<!--
+<div id="carouselExampleIndicators" class="block-slide carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="6000">
+      <div class="slide"  style="background-image: url('/docs/images/drone/control1.png')"></div>
+    </div>
+    <div class="slide carousel-item" data-interval="6000">
+            <div class="slide"  style="background-image: url('/docs/images/drone/control2.png')"></div>
+    </div>
+    <div class="slide carousel-item" data-interval="6000">
+            <div class="slide"  style="background-image: url('/docs/images/drone/control3.png')"></div>
+    </div>
+    <div class="slide carousel-item" data-interval="6000">
+            <div class="slide"  style="background-image: url('/docs/images/drone/control4.png')"></div>
+    </div>
+    <div class="slide carousel-item" data-interval="6000">
+            <div class="slide"  style="background-image: url('/docs/images/drone/control5.png')"></div>
+    </div>
+    <div class="slide carousel-item" data-interval="6000">
+            <div class="slide"  style="background-image: url('/docs/images/drone/control6.png')"></div>
+    </div>
+    <div class="slide carousel-item" data-interval="6000">
+            <div class="slide"  style="background-image: url('/docs/images/drone/control7.png')"></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Предыдущее</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Следующее</span>
+  </a>
+</div>-->
+
+<p class="main-drone-faq">Для входа в программу необходимо ввести логин и пароль. Приложение делится на несколько тематических разделов. На главном экране отображена информация о профиле. В разделе "Дрон" присутствует весь необходимый функционал для работы с дроном. Раздел заказы предназначен для управления заказами компании. Для обеспечении технической поддержки предназначен раздел "Чат".</p>
+</section>

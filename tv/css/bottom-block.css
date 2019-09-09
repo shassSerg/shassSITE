@@ -1,0 +1,59 @@
+#information{
+  background: #DBDBDB;
+  position: absolute;
+  height: 110px;
+  width: 100%;
+  top:2400px;
+  left:0px;
+  z-index: 3;
+  box-shadow: 0 0 20px rgba(200,200,200,0.5);
+}
+
+
+#bottom-block-down{
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height:  60px;
+  background: #171717;
+}
+
+#thInst {
+margin-left: 50px;
+position: absolute;
+width:30px;
+height: 30px;
+left: 50%;
+top: 10px;
+background:url(/images/thinst.png) no-repeat  center center;
+background-size: 100% 100%;
+}
+#thFacb {
+margin-left: -50px;
+position: absolute;
+width:30px;
+height: 30px;
+left: 50%;
+top: 10px;
+background:url(/images/thfacb.png) no-repeat  center center;
+background-size: 100% 100%;
+}
+#thVk {
+position: absolute;
+width:30px;
+height: 30px;
+left: 50%;
+top: 10px;
+background:url(/images/thvk.png) no-repeat  center center;
+background-size: 100% 100%;
+}
+.block-info-bottom{
+position: absolute;
+size:20px;
+right: 20px;
+top: 50%;
+transform: translate(0,-50%);
+color: #DBDBDB;
+}

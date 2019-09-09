@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/docs/css/drone/remote.css">
+
+<h1 id="h1_text"></h1>
+<div id='box_logo_main' class='logo-box-upper-block-right'>
+<div id='logo_loader' class="loader" style='display: none'></div>
+</div>
+<div id='box_logo_info' class='logo-box-upper-block-right'>
+</div>
+
+
+
+
+
+
+
+
+<!-- Logout Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Вы уверены, что хотите выйти?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Подтвердите выход из аккаунта.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+        <button id='logoutSuccess' type="button" class="btn btn-primary">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Введите необходимые для авторизации данные</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div id="login_message_alert" class='login-alerts-class-contacts'>
+          </div>
+        <form id='form_to_login'>
+<div class="form-group">
+<label for="exampleInputEmail1">Логин</label>
+<input name="login" type="login" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Введите логин">
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Пароль</label>
+<input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+</div>
+<!--  <div class="form-check">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Запомнить</label>
+</div>-->
+<button type="submit" id='form_login_button' class="btn btn-primary">Ввойти</button>
+</form>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="/docs/js/drone/remote.js"></script>

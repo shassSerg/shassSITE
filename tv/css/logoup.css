@@ -1,0 +1,16 @@
+.logo-up{
+  position: relative;
+  background: url(/images/logo.png);
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 10px;
+  background-size: 100% 100%;
+  transform: translate(0,-50%);
+}
+.up{
+background: #DBDBDB;
+height: 70px;
+width: 100%;
+border-bottom: 10px solid green;
+}

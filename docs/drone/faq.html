@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="/docs/css/drone/faq.css">
+<div class="message-block message-block-important">
+  <h4>Будьте внимательны!</h4>
+
+  <p>Все приведенные ошибки и возможные их исправления подходят <strong>исключительно</strong> для версии дрона, указанной на основной странице вкладки: <strong>Дрон</strong>.</p>
+
+  <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+</div>
+<h4>FAQ</h4>
+
+<p class="main-drone-faq">В данном руководстве собраны основные возможные вопросы или ошибки, которые могут возникнуть во время использования дрона. Если Вы не нашли решение проблемы, возникшей с дроном в процессе эксплуатации, задайте Ваш вопрос <a href="https://shass.ru">тех.поддержке</a> на главной странице.</p>
+
+<div class="block-faq">
+
+<div id="on" class="message-block-faq-main">
+<div class="message-block-faq">
+<div class="block-arrow-faq"><span class="block-arrow-faq-first"></span><span class="block-arrow-faq-second"></span></div>
+<p>Что делать если дрон <strong>не включается</strong>?</p>
+</div>
+<div class="message-block-faq-info">
+  <div class="message-block-faq-info-block">
+    <p>1. Необходимо подключить зарядное устройство к дрону ( см. <a href="/docs/drone/device#charge">зарядка</a>).</p>
+      <div class="message-block message-block-dark message-block-warning">
+        <h4>Индикатор заряда</h4>
+
+        <p>Если индикатор процесса заряда или индикатор включения <strong>не загорелся</strong> и зарядное устройство исправно, то необходмо произвести диагностику неисправностей дрона самостоятельно ( см. <a href="/docs/drone/about">дрон<a>), либо в специальном сервисном центре.</p>
+
+        <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+      </div>
+      <p>2. Нажмите на кнопку включения и произведите привязку дрона к устройству управления ( см. <a href="/docs/drone/control#connect">привязка дрона по bluetooth</a>). Если устройство управления не видит дрона, хотя индикаторы включения дрона горят, выполните следующие действия ( см. <a href="/docs/drone/faq#connect">не удается подключиться</a>), если индикаторы не горят, то смотрите предупреждение первого пункта.</p>
+  </div>
+</div>
+</div>
+
+<div id="connect" class="message-block-faq-main">
+<div class="message-block-faq">
+<div class="block-arrow-faq"><span class="block-arrow-faq-first"></span><span class="block-arrow-faq-second"></span></div>
+<p><strong>Не удается подключиться</strong> к дрону или его <strong>не видно</strong> как bluetooth-устройство?</p>
+</div>
+<div class="message-block-faq-info">
+  <div class="message-block-faq-info-block">
+        <p>1. Откройте программное обеспечения для управление дроном, на устройстве управления, и перейдите в раздел "Дрон", следуя инструкциям в программе ( см. <a href="/docs/drone/control#connect">подключение дрона</a>).</p>
+
+        <div class="message-block message-block-dark message-block-important">
+          <h4>Дрона нет в списке доступных для подключения устройств</h4>
+
+          <p>Если устройства с именем "SHASS-DRONE" <strong>нет в списке</strong> доступных для подключения устройств, однако есть <strong>неопознанное устройство</strong> с неопределенным именем, попробуйте выполнить настройку bluetooth модуля дрона (см.  <a href="/docs/drone/device#bluetooth">настройка bluetooth</a>), если нет ни одного устройства, то необходимо диагностировать неисправность дрона ( см. <a href="/docs/drone/about">дрон<a>).</p>
+
+          <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+        </div>
+        <p>2. Если к устройству не получается подключится попробуйте выполнить перепривязку дрона ( см. <a href="/docs/drone/control#connect">привязка</a>).</p>
+        <p>3. Выполните обновление информации в программе для управления дроном ( см. <a href="/docs/drone/control#connect">обновление информации</a>). В случае если выйдет ошибка получения информации с дрона выполните прошивку дрона и попробуйте снова ( см. <a href="/docs/drone/device#build">прошивка</a>).</p>
+  </div>
+</div>
+</div>
+
+<div id="noanswer" class="message-block-faq-main">
+<div class="message-block-faq">
+<div class="block-arrow-faq"><span class="block-arrow-faq-first"></span><span class="block-arrow-faq-second"></span></div>
+<p>Дрон <strong>не отвечает</strong> на запросы ( получение значений/установка значений)?</p>
+</div>
+<div class="message-block-faq-info">
+  <div class="message-block-faq-info-block">
+    <p>Данная ошибка является наиболее вероятной на всем времени эксплуатации дрона и связана с особенностями выбранной технологии взаимодейтсвия дрона и утсройства управления (COM - порт, см. <a href="/docs/drone/about">дрон</a>). В COM - последовательном порте иногда возникает рассинхронизация и как следствие потеря данных или их искажение - это и есть причина, по которой дрон может не отвечать или не устанавливать значения. Для устранения этой проблемы необходимо выполнить синхронизацию - подавать 6 любых байт до отправки нужных и, если нужно, повторить эту операцию ( см. <a href="/docs/drone/control#protocol">протокол взаимодействия</a>).</p>
+    <div class="message-block message-block-dark message-block-warning">
+      <h4>Синхронизация не помогает</h4>
+
+      <p>Если подача 6 любых байт до отправки нужных <strong>не помогает</strong> попробуйте выполнить <strong>перепрошивку</strong> дрона  ( см. <a href="/docs/drone/device#build">прошивка</a>).</p>
+
+      <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="noevent" class="message-block-faq-main">
+<div class="message-block-faq">
+<div class="block-arrow-faq"><span class="block-arrow-faq-first"></span><span class="block-arrow-faq-second"></span></div>
+<p>Что делать если дрон <strong>включается и соединяется</strong> с устройством посредством протокола взаимодействия, но <strong>не выполняет</strong> команды ( например, <strong>не взлетает</strong> )?</p>
+</div>
+<div class="message-block-faq-info">
+  <div class="message-block-faq-info-block">
+    <p>1. Выполните действия, описанные <a href="/docs/drone/faq#connect">здесь</a>.</p>
+    <p>2. Проанализируйте данные, полученные после обновления информации о дроне, на предмет соответствия данным полученными с раздела "Дрон->Датчики" в программном обеспечении управления дроном. Если значения датчиков выходят за диапозоны, указанные в информации о дроне, то вероятно это и послужило причиной того, что дрон не выполняет команды. Эти не соответствия необходимо исправить в соответствии <a href="/docs/drone/device">с условиями</a>. Или произведите временную <a href="/docs/drone/device#build">перепрошивку</a> дрона.</p>
+    <div class="message-block message-block-dark message-block-important">
+      <h4>Изменение прошивки</h4>
+
+      <p>Прошивка по умолчанию создана  <strong>с соблюдением необходимых условий для безопасной эксплуатации</strong> дрона, если Вы хотите изменить прошивку, компания производитель <strong>не несет ответсвенности за причиненный ущерб</strong> дрону.</p>
+
+      <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="wronganswer" class="message-block-faq-main">
+<div class="message-block-faq">
+<div class="block-arrow-faq"><span class="block-arrow-faq-first"></span><span class="block-arrow-faq-second"></span></div>
+<p>Дрон <strong>отправляет некорректные</strong> данные?</p>
+</div>
+<div class="message-block-faq-info">
+  <div class="message-block-faq-info-block">
+    <p>Данная ошибка является второй наиболее вероятной на всем времени эксплуатации дрона. Причину проблемы и способ ее устранения Вы можете узнать <a href="/docs/drone/faq#noanswer">здесь</a>.</p>
+    <div class="message-block message-block-dark message-block-warning">
+      <h4>Проблема не устранилась</h4>
+
+      <p>Если проблема не устранилась после выполнения описанных <a href="/docs/drone/faq#noanswer">здесь</a> указаний, выполните <a href="/docs/drone/device#build">следующие действия</a>.</p>
+
+      <p><a href="/docs/drone/about">Для дополнительной информации смотрите главную страницу.</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div>
+
+
+<script src="/docs/js/drone/faq.js"></script>

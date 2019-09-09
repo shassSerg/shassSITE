@@ -1,0 +1,99 @@
+.main-drone-faq{
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2.1rem;
+}
+
+
+.photo-drone{
+  position: relative;
+  cursor: pointer;
+  width: auto;
+  height: 500px;
+  background-size: 100% 100%;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #cecece;
+  box-shadow: 0px 0px 10px 0px #6d6d6d3d;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%,0);
+  }
+  .photo-drone-image{
+    width: auto;
+    height: 100%;
+    position: absolute;
+  }
+
+  .photo-drone-desc{
+    position: absolute;
+    width: 100%;
+    /* bottom: 10px; */
+    top: 100%;
+    transform: translate(0,-100%);
+    background: linear-gradient(0deg,#333333,#00000000);
+    height: 20%;
+    /* padding: 30px; */
+    color: #DBDBDB;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 2.3rem;
+    /* padding: 50px; */
+    padding-top: 40px;
+    padding-left: 10px;
+    }
+
+
+    .slide{
+      width: 100% !important;
+      height: 500px !important;
+background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    .block-slide{
+      width: 100%;
+    height: 500px !important;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    }
+
+
+    .carousel-control-next, .carousel-control-prev {
+        color: #3d3d3d !important;
+    }
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23666' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e") !important;
+      }
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23666' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e")  !important;
+    }
+      .carousel-indicators li {
+        background-color: #717171 !important;
+    }
+    .carousel-caption {
+        color: #3d3d3d  !important;
+    }
+
+
+    .slider-images-slide{
+      width: 300px !important;
+      height: 500px !important;
+background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    .slider-images{
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      background:#ffffff4f;
+    border-radius: 10px;
+    margin-bottom: 30px;
+        position: relative;
+            box-shadow: 0px 0px 15px -7px black;
+    }

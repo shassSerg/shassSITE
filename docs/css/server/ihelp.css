@@ -1,0 +1,30 @@
+.class-list-ihelp{
+      margin-top: 1.5rem;
+}
+
+.ihelp-class-item{
+  cursor: pointer;
+  transition: transform 0.25s ease 0s;
+  /*transition: color 0.12s ease 0s, background-color 0.12s ease 0s;/*, border-color 0.15s ease 0s;*/
+}
+.class-title-ihelp{
+  transition: transform 0.25s ease 0s;
+}
+.ihelp-class-item:hover {
+    /*background-color: #1a961752 !important;
+    /*border-color: #60805f !important;
+    color: black !important;*/
+    background: aliceblue;
+}
+.main-drone-faq{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2.3rem;
+}
+#i_hel_main{
+  padding: 20px;
+background: whitesmoke;
+border-radius: 10px;
+overflow: hidden;
+    margin-bottom: 1.0rem;
+}

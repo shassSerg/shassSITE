@@ -1,0 +1,132 @@
+.stream-block{
+margin: 10px;
+min-width: 300px;
+min-height: 270px;
+width: 100%;
+height:270px;
+border-radius: 5px;
+position: relative;
+cursor: pointer;
+box-shadow: 0 0 30px rgba(0,0,0,0.7);
+overflow: hidden;
+}
+
+.stream-block-anim{
+transform: scale(1) !important;
+transition: transform 0.17s linear 0s !important;
+}
+.stream-block-anim:hover{
+transform: scale(1.025) !important;
+}
+
+.stream-block-loading{
+display: none;
+}
+.stream-block-loading{
+background: rgba(230,230,230,0.3);
+border-radius: 5px;
+margin: 10px;
+min-width: 200px;
+min-height: 200px;
+width: auto;
+height:250px;
+}
+
+.equal-width-cols {
+  width: 100%;
+  table-layout: fixed;
+}
+.equal-width-cols td {
+  width: 100%;
+}
+.stream-block-info{
+  width:100%;
+  height: 90px;
+  position: absolute;
+    border-radius: 10px;
+background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.stream-block-img{
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.stream-block-info-login{
+  width: 100px;
+  height: 20px;
+  left: 100px;
+  top: 5px;
+      position: absolute;
+      font-size: 30px;
+      color: #DBDBDB;
+}
+.stream-block-info-title{
+  width: calc(100% - 100px);
+  height: 20px;
+  left: 100px;
+  top: 40px;
+  position: absolute;
+  font-size: 20px;
+  color: #DBDBDB;
+}
+.stream-block-info-logo{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+}
+.stream-block-info-online{
+  width: 100px;
+  height: 20px;
+  right: 0;
+  bottom: 5px;
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  color: #DBDBDB;
+}
+.stream-block-info-online-bool{
+  width: 100px;
+  height: 20px;
+  right: 0;
+  top: 5px;
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  color: #DBDBDB;
+}
+.stream-block-loading-table{
+  border-radius: 5px;
+  margin: 0;
+  min-width: 200px;
+  min-height: 200px;
+  width: auto;
+  height:250px;
+}
+.up{
+z-index: 10;
+  position: relative;
+background: #DBDBDB;
+height: 70px;
+width: 100%;
+border-bottom: 10px solid green;
+}
+.app-class{
+top: 90px;
+padding: 10px;
+width: 100%;
+}
+.logo-up{
+  position: relative;
+  background: url(/images/logo.png);
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 10px;
+  background-size: 100% 100%;
+  transform: translate(0,-50%);
+}
